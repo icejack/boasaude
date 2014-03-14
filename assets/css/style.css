@@ -1,0 +1,295 @@
+/* BoaSaude.Me: Na Hora Certa! */
+/*LAYOUT MENU INICIAL */
+/* GLOBAL SETTINGS */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+
+  	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+ 	-webkit-tap-highlight-color: transparent; /* For some Androids */ 	
+  	-webkit-user-select: none;    
+}
+
+body {
+	width:100%;
+	overflow: hidden;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    background: url(../img/background-menu.png) no-repeat center center fixed ;
+}
+
+map{
+width: 100%;
+height: 100%;
+}
+/* APP LOGO IMG*/
+header#header-app {
+	width:100%;
+	height:65px;
+	text-align: center;
+    background: #6CC5A3;
+    font-size: 14;
+    color: white;
+/*
+background: #6CC5A3 url('../img/logo2.png') no-repeat center;
+*/
+	position: absolute;
+	top:0px;
+}
+/* BOX LOAD PAGES */
+#page {
+	position:absolute;
+	width:100%;
+	height:100%;
+	-webkit-transition: translate3d(0,0,0);
+	transform: translate3d(0, 0, 0);
+}
+.title-page {
+	font-size: 30px;
+	color:#b8b9b9;
+	padding-bottom: 20px;
+	border-bottom:1px solid #ccc;
+	padding-left:20px;
+}
+#iscroll {
+    position:relative;
+}
+#content {
+	width:100%;
+	position: absolute;
+	top:65px;
+	left:0px;
+	height:100%;
+	color:#b8b9b9;
+	overflow: hidden;
+}
+#content a {
+	color:#fff;
+}
+#content, #page {
+    -webkit-overflow-scrolling:touch;
+}
+/* MENU BUTTON */
+#menu-button {
+	top:5px;
+	left:3px;
+	position: absolute;
+	z-index: 999;
+	display: block;
+	width:80px;
+	color:white;
+	height:55px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 37px;
+	background: #345365;
+	background: url('../img/back.png') no-repeat center;
+}
+
+/* MENU APP */
+
+#panel {
+	z-index:180;
+	width:100%;
+	height:100%;
+	display:none;
+    position:absolute; top:0; left:0;
+	overflow-y:auto;
+	overflow-x:hidden;
+	-webkit-overflow-scrolling:touch;
+	-webkit-backface-visibility:visible;
+	padding:10px;
+	padding-top:0px;
+} /* This class is applied to the divs that contain the various "views" or pages of the app. */
+
+menu {
+	position: absolute;
+	top:0;
+	left:0;
+	width:180px;
+    color: white;
+}
+#menu-content{
+    position:relative;
+}
+/* INTERNAL PAGES */
+#internal-page {
+    /*padding:10px;
+	padding-bottom: 20px;*/
+}
+.page-item {
+	overflow: hidden;
+	margin-top:20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+.page-item img{
+	float:right;
+	width:80px;
+	height:80px;
+	border-radius: 60px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#internal-page h1 {
+    font:5px "Source Sans", helvetica, arial, sans-serif;
+	width:100%;
+	font-size: 25px;
+	text-align: center;
+	
+}
+.page-item p {
+	margin-top:10px;
+	text-align: right;
+	font-size: 16px;
+}
+
+
+/*Espaçamento do layout do MENU */
+
+/* Cores do MENU*/
+.bg-color-orange {
+    opacity: 0.7;    
+  background-color: #f09609 !important;
+}
+
+.bg-color-purple {
+   opacity: 0.7;      
+  background-color: #7b4f9d !important;
+}
+
+.bg-color-greenDark {
+   opacity: 0.7;
+  background-color: #008641 !important;
+}
+
+.bg-color-blue {
+   opacity: 0.7;  
+  background-color: #2e8bcc !important;
+}
+
+.bg-color-red {
+   opacity: 0.7;  
+  background-color: #e51400 !important;
+}
+
+.bg-color-green {
+   opacity: 0.7;  
+  background-color: #339933 !important;
+}
+
+.bg-color-blueDark {
+opacity: 0.7;  
+  background-color: #20608e !important;
+}
+
+.bg-color-yellow {
+   opacity: 0.7;    
+  background-color: #ffc40d !important;
+}
+
+.bg-color-pink {
+   opacity: 0.7;   
+  background-color: #e671b8 !important;
+}
+
+.bg-color-darken {
+   opacity: 0.7;    
+  background-color: #1c1c1c !important;
+}
+
+.bg-color-gray {
+   opacity: 0.7;    
+  background-color: #555555 !important;
+}
+
+.bg-color-grayLight {
+   opacity: 0.7;    
+  background-color: #999999 !important;
+}
+
+/*  Seções do MENU*/
+.panorama .panorama-sections .panorama-section.tile-span-3 {
+  width: 480px;
+  margin-left: 0;
+}
+
+.metro .tile {
+  position: relative;
+  display: block;
+    float: center;
+  width: 100%;
+  height: 140px;
+  padding: 0px 0px;
+  margin: 0px;
+  overflow: hidden;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #2C83EF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: padding;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+    
+}
+
+
+.metro .tile .app-label,
+.metro .tile .label {
+/*
+  position: absolute;
+  bottom: 5px;
+*/
+  left: 10px;
+  font-size: 15px;
+}
+
+.metro .tile .app-count,
+.metro .tile .count {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.metro .tile .image-wrapper span.icon {
+  width: 80px;
+  height: 80px;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+/* Calendário MENU */
+.metro .tile.app .image-wrapper {
+/*  display: block;*/
+    width: 150px;
+    height: 80px;
+    padding: 8px 0;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Calendário MENU */
+.metro .tile.wide.imagetext {
+  width: 255px;
+  height: 100px;
+  padding: 20px;
+}
+
+.metro .tile.wide.imagetext .image-wrapper {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+
+/* FIM MENU */
+
+

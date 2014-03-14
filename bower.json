@@ -1,0 +1,31 @@
+{
+  "name": "BoaSaudeMe",
+  "version": "1.0.0",
+  "homepage": "https://github.com/icejack/bs",
+  "authors": [
+    "Gustavo Costa <jacques@boasaude.me>",
+  ],
+  "description": "Faster PhoneGap Template",
+  "keywords": [
+    "phonegap",
+    "template",
+    "mobile"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hammerjs": "~1.0.6",
+    "fastclick": "~0.6.11",
+    "iscroll": "~5.1.1",
+    "zepto": "~1.1.2",
+    "topcoat": "~0.8.0"
+  }
+}
