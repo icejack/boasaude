@@ -1,11 +1,11 @@
 {
   "name": "BoaSaudeMe",
   "version": "1.0.0",
-  "homepage": "https://github.com/icejack/bs",
+  "homepage": "https://github.com/icejack/boasaude",
   "authors": [
-    "Gustavo Costa <jacques@boasaude.me>",
+    "Jacques Belmont <jacques@boasaude.me>",
   ],
-  "description": "Faster PhoneGap Template",
+  "description": "BoaSaudeMe App",
   "keywords": [
     "phonegap",
     "template",
