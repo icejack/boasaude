@@ -17,13 +17,10 @@ body {
 	width:100%;
 	overflow: hidden;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    background: url(../img/background-menu.png) no-repeat center center fixed ;
+    
 }
 
-map{
-width: 100%;
-height: 100%;
-}
+
 /* APP LOGO IMG*/
 header#header-app {
 	width:100%;
@@ -150,78 +147,20 @@ menu {
 /*Espaçamento do layout do MENU */
 
 /* Cores do MENU*/
-.bg-color-orange {
-    opacity: 0.7;    
-  background-color: #f09609 !important;
-}
-
-.bg-color-purple {
-   opacity: 0.7;      
-  background-color: #7b4f9d !important;
-}
-
-.bg-color-greenDark {
-   opacity: 0.7;
-  background-color: #008641 !important;
-}
 
 .bg-color-blue {
    opacity: 0.7;  
   background-color: #2e8bcc !important;
 }
 
-.bg-color-red {
-   opacity: 0.7;  
-  background-color: #e51400 !important;
-}
-
-.bg-color-green {
-   opacity: 0.7;  
-  background-color: #339933 !important;
-}
-
-.bg-color-blueDark {
-opacity: 0.7;  
-  background-color: #20608e !important;
-}
-
-.bg-color-yellow {
-   opacity: 0.7;    
-  background-color: #ffc40d !important;
-}
-
-.bg-color-pink {
-   opacity: 0.7;   
-  background-color: #e671b8 !important;
-}
-
-.bg-color-darken {
-   opacity: 0.7;    
-  background-color: #1c1c1c !important;
-}
-
-.bg-color-gray {
-   opacity: 0.7;    
-  background-color: #555555 !important;
-}
-
-.bg-color-grayLight {
-   opacity: 0.7;    
-  background-color: #999999 !important;
-}
-
-/*  Seções do MENU*/
-.panorama .panorama-sections .panorama-section.tile-span-3 {
-  width: 480px;
-  margin-left: 0;
-}
 
 .metro .tile {
+border-radius:70px;
   position: relative;
   display: block;
     float: center;
-  width: 100%;
-  height: 140px;
+  width: 20em;
+/*  height: 140px;*/
   padding: 0px 0px;
   margin: 0px;
   overflow: hidden;
@@ -243,8 +182,8 @@ opacity: 0.7;
   position: absolute;
   bottom: 5px;
 */
-  left: 10px;
-  font-size: 15px;
+
+  font-size: 30px;
 }
 
 .metro .tile .app-count,
@@ -267,8 +206,7 @@ opacity: 0.7;
 .metro .tile.app .image-wrapper {
 /*  display: block;*/
     width: 150px;
-    height: 80px;
-    padding: 8px 0;
+   
     margin-top: 10px;
     text-align: center;
     vertical-align: middle;
@@ -292,4 +230,37 @@ opacity: 0.7;
 
 /* FIM MENU */
 
+
+/*MENU LATERAL:*/
+
+.list,
+.topcoat-list {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ 
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+.topcoat-list {
+  
+  background-color: #FFF;
+}
+
+
+.topcoat-list__container {
+  border-top: 1px solid #9daca9;
+  color: #454545;
+}
+
+.topcoat-list__item {
+  padding: 1.25rem;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #9daca9;
+}
 

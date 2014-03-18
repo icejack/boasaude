@@ -1,5 +1,5 @@
 (function(window) {
-    // FastGap object
+   
     var FG = window.FG = {
         scrollApp: null,
         scrollMenu:null,
@@ -45,26 +45,26 @@
         //listener menu button
         $("#page").on('click', "#menu-button", Transition.toggleMenu);
         //listener swipe events
-        Hammer(document).on("swipeleft", Transition.toggleMenu);
-        Hammer(document).on("swiperight", Transition.toggleMenu);
+//        Hammer(document).on("swipeleft", Transition.toggleMenu);
+//        Hammer(document).on("swiperight", Transition.toggleMenu);
         
         //scroll
         $("#iscroll").height(window.innerHeight - FG.$headerApp.height());
         $("#menu-content").height(window.innerHeight);
     
-        FG.scrollApp = new IScroll("#iscroll", {
-            scrollbars: true,
-            mouseWheel: true,
-            interactiveScrollbars: true,
-            //fadeScrollbars:false
-        });
+//        FG.scrollApp = new IScroll("#iscroll", {
+//            scrollbars: true,
+//            mouseWheel: true,
+//            interactiveScrollbars: true,
+//            //fadeScrollbars:false
+//        });
         
-        FG.scrollMenu = new IScroll("#menu-content", {
-            scrollbars: true,
-            mouseWheel: true,
-            interactiveScrollbars: true,
-            //fadeScrollbars:false
-        });
+//        FG.scrollMenu = new IScroll("#menu-content", {
+//            scrollbars: true,
+//            mouseWheel: true,
+//            interactiveScrollbars: true,
+//            //fadeScrollbars:false
+//        });
         
     };
 })(window);

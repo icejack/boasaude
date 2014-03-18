@@ -26,17 +26,11 @@
             case 'home.html':
                 FG.currentController = new HomeController();
                 break;
-            case 'calendario.html':
-                FG.currentController = new CalendarioController();
-                break;
             case 'mapa.html':
                 FG.currentController = new MapaController();
                 break;
-            case 'horario.html':
-                FG.currentController = new HorarioController();
-                break;
             default:
-                alert('No controller found.');
+                alert('Nenhum controle encontrado.');
                 break;
         }
 
@@ -45,7 +39,7 @@
             FG.currentController.initialize();
         }
 
-        FG.scrollApp.refresh();
+//        FG.scrollApp.refresh();
         Transition.hideMenu();
         FG.$content.removeClass(Transition.class);
     };

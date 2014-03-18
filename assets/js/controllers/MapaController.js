@@ -3,7 +3,9 @@ var MapaController = function() {};
 MapaController.prototype = {
     initialize: function() {
         
-   var map;
+        
+//   INICIO     Simples Mapa 
+ var map;
 function initialize() {
   var mapOptions = {
     zoom: 8,
@@ -14,12 +16,13 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+       
+//FIM
         
     },
     destroy: function() {
-        google.maps.event.removeListener();
-
-        alert("Foi destruido!");
+        google.maps.event.removeListener(); 
+        console.log("mapa destruido com sucesso!");
 
         PageLoad.ajxHandle = null;
     }

@@ -8,9 +8,8 @@
 
     /* effects, for select one effect, create or view effects in transitions.css */
     Transition.animations = {
-        'calendario.html': 'transitionApp1',
-        'mapa.html': 'transitionApp1',
-        'horario.html': 'transitionApp1'
+        
+        'mapa.html': 'transitionApp1'
     }
     //get current class for page
     Transition.getClassAnimation = function(page) {

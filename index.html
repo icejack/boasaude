@@ -4,41 +4,25 @@
     <meta charset="UTF-8" />
     
         <!-- MAPA - Js -->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<!--
-        <script src="assets/js/mapa/geolib.min.js"></script>
-        <script src="assets/js/mapa/plugins.js"></script>
-        <script src="assets/js/mapa/script.js"></script>
-    
--->
-        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/demos/js/modernizr-2.0.6/modernizr.min.js"></script>
-
-<!--
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script type="text/javascript" src="    http://demos.jquerymobile.com/1.4.0/js/jquery.mobile-1.4.0.min.js
-"></script>
-
--->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
    
     	<!-- LOAD CSS -->
-		<link rel="stylesheet" href="assets/css/topcoat-mobile-light.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
+       
 		<link rel="stylesheet" href="assets/css/transitions.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/metroIcone.css">
    
 		<!-- LOAD JAVASCRIPT -->
 		<!-- CONTROLLERS -->
 		<script src="assets/js/controllers/AppController.js"></script>
 		<script src="assets/js/controllers/HomeController.js"></script>
-		<script src="assets/js/controllers/CalendarioController.js"></script>
+		
 		<script src="assets/js/controllers/MapaController.js"></script>
-		<script src="assets/js/controllers/HorarioController.js"></script>
 
 		<!-- LIBRARIES (load with bower) -->
-		<script src="assets/js/vendors/zepto.min.js"></script>
+        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/demos/js/jquery-mobile-1.0/jquery.mobile.min.js"></script> 
+        <script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/demos/js/jquery-1.7.1/jquery.min.js"></script>
 		<script src="assets/js/vendors/fastclick.js"></script>
-		<script src="assets/js/vendors/iscroll.js"></script>
-		<script src="assets/js/vendors/hammer.min.js"></script>
+		
 
 		<!-- BOASAUDE JS -->
 		<script src="assets/js/FG.js"></script>
@@ -50,11 +34,17 @@
         <!-- VIEWPORT -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>BoaSaude.Me: Na hora certa!</title>
-    
-    
+     
+     <style>
+          html, body, #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+          }
+        </style>
 	</head>
 	<body>
-        
+      
 		<!-- BOX CONTENT LOAD PAGES WITH AJAX-->
 		<div id="page">
 			<!-- MENU -->
@@ -64,31 +54,6 @@
                         <li class="icon-home topcoat-list__item botoes-app" data-url="home.html">
 							Voltar / Início
 						</li>
-						<li class="topcoat-list__item " align="center">
-							
-						</li>
-						<li class="item"><b>Cidade</b>
-                            <li class="topcoat-list__item icon-location">
-                                João Pessoa
-                            </li>
-                       </li>
-                        <li class="item"><b>App</b>
-                            <li class="icon-settings topcoat-list__item botoes-app" data-url="home.html">
-                                Configurações
-                            </li>
-                            <li class="icon-lab topcoat-list__item botoes-app" data-url="home.html">
-                                Produtos
-                            </li>
-                            <li class="icon-rocket topcoat-list__item botoes-app" data-url="home.html">
-                                Serviços
-                            </li>
-                            <li class="icon-info topcoat-list__item botoes-app" data-url="home.html">
-                                Sobre
-                            </li>
-                            <li class="icon-android topcoat-list__item botoes-app" data-url="home.html">
-                                Contato
-                            </li>
-                        </li>
 					</ul>
 				</div>
 			</menu>
@@ -99,10 +64,11 @@
 				<div id="menu-button"></div>
 			</header>
 			<!-- DYNAMIC CONTENT -->
+
 			<div id="content">
                 <div id="iscroll">
-                    <div id="load-content-here">
-                        <div role="main" class="ui-content" id="map-canvas">
+                    <div id="load-content-here">    
+                        <!-- Conteúdo da página do mapa será carregado aqui -->
                     </div>
                 </div>
 			</div>
