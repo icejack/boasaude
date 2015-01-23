@@ -1,0 +1,55 @@
+{
+  "name": "boasaude",
+  "version": "0.0.5",
+  "description": "Boasaude is a template created by Brazilians to start developing native apps for smartphones using PhoneGap based in Fastgap",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/icejack/boasaude.git"
+  },
+  "homepage": "http://boasaude.me/",
+  "keywords": [
+    "fastgap",
+    "zepto",
+    "cordova",
+    "phonegap"
+  ],
+  "author": {
+    "name": "jacques",
+    "email": "jacquesbelmont@gmail.com",
+    "url": "https://github.com/icejack"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jacques",
+      "email": "jacquesbelmont@gmail.com",
+      "url": "https://github.com/icejack"
+    },
+  ],
+  "bugs": {
+    "url": "https://github.com/iceajck/boasaude/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-imagemin": "^0.7.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-notify": "~0.3.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-bower-install": "~1.4.1",
+    "grunt-bump": "0.0.13",
+    "load-grunt-tasks": "^0.4.0",
+    "grunt-banner": "^0.2.2",
+    "grunt-sass": "^0.12.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "time-grunt": "^0.3.1"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  }
+}
